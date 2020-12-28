@@ -1,0 +1,1400 @@
+cs:0100 268A260100     MOV AH, ES:[0001h]
+cs:0105 746F           JE 0176h
+cs:0107 746D           JE 0176h
+cs:0109 7C6B           JL 0176h
+cs:010B 7E69           JLE 0176h
+cs:010D 7267           JB 0176h
+cs:010F 7665           JBE 0176h
+cs:0111 7A63           JP 0176h
+cs:0113 7061           JO 0176h
+cs:0115 785F           JS 0176h
+cs:0117 755D           JNE 0176h
+cs:0119 755B           JNE 0176h
+cs:011B 7D59           JGE 0176h
+cs:011D 7F57           JG 0176h
+cs:011F 7355           JAE 0176h
+cs:0121 7753           JA 0176h
+cs:0123 7B51           JNP 0176h
+cs:0125 714F           JNO 0176h
+cs:0127 794D           JNS 0176h
+cs:0129 E24B           LOOP 0176h
+cs:012B E149           LOOPE 0176h
+cs:012D E147           LOOPE 0176h
+cs:012F E045           LOOPN 0176h
+cs:0131 E043           LOOPN 0176h
+cs:0133 E341           LCXZ 0176h
+cs:0135 E8E20F         CALL 111Ah
+cs:0138 FF17           CALL word ptr [BX]
+cs:013A FF5778         CALL word ptr [BX+78h]
+cs:013D FF975634       CALL word ptr [BX+3456h]
+cs:0141 FF10           CALL word ptr [BX+SI]
+cs:0143 FF5079         CALL word ptr [BX+SI+79h]
+cs:0146 FF907856       CALL word ptr [BX+SI+5678h]
+cs:014A FF11           CALL word ptr [BX+DI]
+cs:014C FF5129         CALL word ptr [BX+DI+29h]
+cs:014F FF917856       CALL word ptr [BX+DI+5678h]
+cs:0153 FF14           CALL word ptr [SI]
+cs:0155 FF5428         CALL word ptr [SI+28h]
+cs:0158 FF945634       CALL word ptr [SI+3456h]
+cs:015C FF15           CALL word ptr [DI]
+cs:015E FFD0           CALL AX
+cs:0160 FFD3           CALL BX
+cs:0162 FFD1           CALL CX
+cs:0164 FFD2           CALL DX
+cs:0166 FFD4           CALL SP
+cs:0168 FFD7           CALL DI
+cs:016A FFD5           CALL BP
+cs:016C FFD6           CALL SI
+cs:016E FFD5           CALL BP
+cs:0170 FF5854         CALL word ptr [BX+SI+54h]
+cs:0173 FF51FE         CALL word ptr [BX+DI+FEh]
+cs:0176 9A45225634     CALL 3456:2245
+cs:017B E99C0F         JMP 111Ah
+cs:017E EBF6           JMP 0176h
+cs:0180 FF27           JMP word ptr [BX]
+cs:0182 FF6778         JMP word ptr [BX+78h]
+cs:0185 FFA75634       JMP word ptr [BX+3456h]
+cs:0189 FF20           JMP word ptr [BX+SI]
+cs:018B FF6079         JMP word ptr [BX+SI+79h]
+cs:018E FFA07856       JMP word ptr [BX+SI+5678h]
+cs:0192 FF21           JMP word ptr [BX+DI]
+cs:0194 FF6129         JMP word ptr [BX+DI+29h]
+cs:0197 FFA17856       JMP word ptr [BX+DI+5678h]
+cs:019B FF24           JMP word ptr [SI]
+cs:019D FF6428         JMP word ptr [SI+28h]
+cs:01A0 FFA45634       JMP word ptr [SI+3456h]
+cs:01A4 FF25           JMP word ptr [DI]
+cs:01A6 FFE0           JMP AX
+cs:01A8 FFE3           JMP BX
+cs:01AA FFE1           JMP CX
+cs:01AC FFE2           JMP DX
+cs:01AE FFE4           JMP SP
+cs:01B0 FFE7           JMP DI
+cs:01B2 FFE5           JMP BP
+cs:01B4 FFE6           JMP SI
+cs:01B6 FFE5           JMP BP
+cs:01B8 FF6854         JMP word ptr [BX+SI+54h]
+cs:01BB EA45225634     JMP 3456:2245
+cs:01C0 C3             RET
+cs:01C1 C22301         RET 0123h
+cs:01C4 CB             RETF
+cs:01C5 CA4523         RETF 2345h
+cs:01C8 CC             INT 3
+cs:01C9 CE             INTO
+cs:01CA CD21           INT 21h
+cs:01CC CD80           INT 80h
+cs:01CE 8B0E5489       MOV CX, [8954h]
+cs:01D2 8B0F           MOV CX, [BX]
+cs:01D4 8B5778         MOV DX, [BX+78h]
+cs:01D7 8B9F5634       MOV BX, [BX+3456h]
+cs:01DB 8B30           MOV SI, [BX+SI]
+cs:01DD 8B7879         MOV DI, [BX+SI+79h]
+cs:01E0 8BA87856       MOV BP, [BX+SI+5678h]
+cs:01E4 8B31           MOV SI, [BX+DI]
+cs:01E6 8B7929         MOV DI, [BX+DI+29h]
+cs:01E9 8BA97856       MOV BP, [BX+DI+5678h]
+cs:01ED 8B24           MOV SP, [SI]
+cs:01EF 8B5428         MOV DX, [SI+28h]
+cs:01F2 8B9C5634       MOV BX, [SI+3456h]
+cs:01F6 8B05           MOV AX, [DI]
+cs:01F8 8B5558         MOV DX, [DI+58h]
+cs:01FB 8B9D5634       MOV BX, [DI+3456h]
+cs:01FF 8B4E00         MOV CX, [BP+00h]
+cs:0202 8B5658         MOV DX, [BP+58h]
+cs:0205 8B9E5634       MOV BX, [BP+3456h]
+cs:0209 8B32           MOV SI, [BP+SI]
+cs:020B 8B7A39         MOV DI, [BP+SI+39h]
+cs:020E 8BAA7856       MOV BP, [BP+SI+5678h]
+cs:0212 8B33           MOV SI, [BP+DI]
+cs:0214 8B7B49         MOV DI, [BP+DI+49h]
+cs:0217 8BAB7856       MOV BP, [BP+DI+5678h]
+cs:021B 890F           MOV [BX], CX
+cs:021D 895778         MOV [BX+78h], DX
+cs:0220 899F5634       MOV [BX+3456h], BX
+cs:0224 8900           MOV [BX+SI], AX
+cs:0226 896069         MOV [BX+SI+69h], SP
+cs:0229 89B87856       MOV [BX+SI+5678h], DI
+cs:022D 8929           MOV [BX+DI], BP
+cs:022F 897149         MOV [BX+DI+49h], SI
+cs:0232 89B97856       MOV [BX+DI+5678h], DI
+cs:0236 8904           MOV [SI], AX
+cs:0238 894C78         MOV [SI+78h], CX
+cs:023B 89945634       MOV [SI+3456h], DX
+cs:023F 892D           MOV [DI], BP
+cs:0241 896578         MOV [DI+78h], SP
+cs:0244 89B55634       MOV [DI+3456h], SI
+cs:0248 897E00         MOV [BP+00h], DI
+cs:024B 894E78         MOV [BP+78h], CX
+cs:024E 89965634       MOV [BP+3456h], DX
+cs:0252 8932           MOV [BP+SI], SI
+cs:0254 897A59         MOV [BP+SI+59h], DI
+cs:0257 89827856       MOV [BP+SI+5678h], AX
+cs:025B 893B           MOV [BP+DI], DI
+cs:025D 895B19         MOV [BP+DI+19h], BX
+cs:0260 89937856       MOV [BP+DI+5678h], DX
+cs:0264 8A05           MOV AL, [DI]
+cs:0266 8A6578         MOV AH, [DI+78h]
+cs:0269 8ABD5634       MOV BH, [DI+3456h]
+cs:026D 8A4E00         MOV CL, [BP+00h]
+cs:0270 8A5678         MOV DL, [BP+78h]
+cs:0273 8A9E5634       MOV BL, [BP+3456h]
+cs:0277 8A2A           MOV CH, [BP+SI]
+cs:0279 887578         MOV [DI+78h], DH
+cs:027C 88955634       MOV [DI+3456h], DL
+cs:0280 886E00         MOV [BP+00h], CH
+cs:0283 884E56         MOV [BP+56h], CL
+cs:0286 88BE5634       MOV [BP+3456h], BH
+cs:028A 881A           MOV [BP+SI], BL
+cs:028C 886245         MOV [BP+SI+45h], AH
+cs:028F 88827856       MOV [BP+SI+5678h], AL
+cs:0293 C6457815       MOV byte ptr [DI+78h], 15h
+cs:0297 C685563416     MOV byte ptr [DI+3456h], 16h
+cs:029C C6460028       MOV byte ptr [BP+00h], 28h
+cs:02A0 C6465688       MOV byte ptr [BP+56h], 88h
+cs:02A4 C78656343412   MOV word ptr [BP+3456h], 1234h
+cs:02AA C7021534       MOV word ptr [BP+SI], 3415h
+cs:02AE C742458547     MOV word ptr [BP+SI+45h], 4785h
+cs:02B3 C78278563615   MOV word ptr [BP+SI+5678h], 1536h
+cs:02B9 B015           MOV AL, 15h
+cs:02BB B416           MOV AH, 16h
+cs:02BD B128           MOV CL, 28h
+cs:02BF B688           MOV DH, 88h
+cs:02C1 BB3412         MOV BX, 1234h
+cs:02C4 BE1534         MOV SI, 3415h
+cs:02C7 BC8547         MOV SP, 4785h
+cs:02CA BD3615         MOV BP, 1536h
+cs:02CD BD1254         MOV BP, 5412h
+cs:02D0 8E975634       MOV SS, word ptr [BX+3456h]
+cs:02D4 8E00           MOV ES, word ptr [BX+SI]
+cs:02D6 8E5869         MOV DS, word ptr [BX+SI+69h]
+cs:02D9 D127           SHL word ptr [BX]
+cs:02DB D26778         SHL byte ptr [BX+78h], CL
+cs:02DE D1A75634       SHL word ptr [BX+3456h]
+cs:02E2 D3E7           SHL DI, CL
+cs:02E4 D06069         SHL byte ptr [BX+SI+69h]
+cs:02E7 D3A07856       SHL word ptr [BX+SI+5678h], CL
+cs:02EB D121           SHL word ptr [BX+DI]
+cs:02ED D36149         SHL word ptr [BX+DI+49h], CL
+cs:02F0 D1E6           SHL SI
+cs:02F2 D224           SHL byte ptr [SI], CL
+cs:02F4 D16478         SHL word ptr [SI+78h]
+cs:02F7 D2A45634       SHL byte ptr [SI+3456h], CL
+cs:02FB D125           SHL word ptr [DI]
+cs:02FD D26578         SHL byte ptr [DI+78h], CL
+cs:0300 D1A55634       SHL word ptr [DI+3456h]
+cs:0304 D36600         SHL word ptr [BP+00h], CL
+cs:0307 D16678         SHL word ptr [BP+78h]
+cs:030A D2E6           SHL DH, CL
+cs:030C D022           SHL byte ptr [BP+SI]
+cs:030E D36259         SHL word ptr [BP+SI+59h], CL
+cs:0311 D1A27856       SHL word ptr [BP+SI+5678h]
+cs:0315 D223           SHL byte ptr [BP+DI], CL
+cs:0317 D16319         SHL word ptr [BP+DI+19h]
+cs:031A D3A37856       SHL word ptr [BP+DI+5678h], CL
+cs:031E D12F           SHR word ptr [BX]
+cs:0320 D26F78         SHR byte ptr [BX+78h], CL
+cs:0323 D1AF5634       SHR word ptr [BX+3456h]
+cs:0327 D328           SHR word ptr [BX+SI], CL
+cs:0329 D06869         SHR byte ptr [BX+SI+69h]
+cs:032C D3A87856       SHR word ptr [BX+SI+5678h], CL
+cs:0330 D129           SHR word ptr [BX+DI]
+cs:0332 D36949         SHR word ptr [BX+DI+49h], CL
+cs:0335 D1A97856       SHR word ptr [BX+DI+5678h]
+cs:0339 D22C           SHR byte ptr [SI], CL
+cs:033B D16C78         SHR word ptr [SI+78h]
+cs:033E D2AC5634       SHR byte ptr [SI+3456h], CL
+cs:0342 D12D           SHR word ptr [DI]
+cs:0344 D2E8           SHR AL, CL
+cs:0346 D1AD5634       SHR word ptr [DI+3456h]
+cs:034A D36E00         SHR word ptr [BP+00h], CL
+cs:034D D16E78         SHR word ptr [BP+78h]
+cs:0350 D3E9           SHR CX, CL
+cs:0352 D02A           SHR byte ptr [BP+SI]
+cs:0354 D36A59         SHR word ptr [BP+SI+59h], CL
+cs:0357 D1AA7856       SHR word ptr [BP+SI+5678h]
+cs:035B D22B           SHR byte ptr [BP+DI], CL
+cs:035D D1ED           SHR BP
+cs:035F D3AB7856       SHR word ptr [BP+DI+5678h], CL
+cs:0363 D107           ROL word ptr [BX]
+cs:0365 D24778         ROL byte ptr [BX+78h], CL
+cs:0368 D1875634       ROL word ptr [BX+3456h]
+cs:036C D3C7           ROL DI, CL
+cs:036E D04069         ROL byte ptr [BX+SI+69h]
+cs:0371 D3807856       ROL word ptr [BX+SI+5678h], CL
+cs:0375 D101           ROL word ptr [BX+DI]
+cs:0377 D34149         ROL word ptr [BX+DI+49h], CL
+cs:037A D1C6           ROL SI
+cs:037C D204           ROL byte ptr [SI], CL
+cs:037E D14478         ROL word ptr [SI+78h]
+cs:0381 D2845634       ROL byte ptr [SI+3456h], CL
+cs:0385 D105           ROL word ptr [DI]
+cs:0387 D24578         ROL byte ptr [DI+78h], CL
+cs:038A D1855634       ROL word ptr [DI+3456h]
+cs:038E D34600         ROL word ptr [BP+00h], CL
+cs:0391 D14678         ROL word ptr [BP+78h]
+cs:0394 D2C6           ROL DH, CL
+cs:0396 D002           ROL byte ptr [BP+SI]
+cs:0398 D34259         ROL word ptr [BP+SI+59h], CL
+cs:039B D1827856       ROL word ptr [BP+SI+5678h]
+cs:039F D203           ROL byte ptr [BP+DI], CL
+cs:03A1 D14319         ROL word ptr [BP+DI+19h]
+cs:03A4 D3837856       ROL word ptr [BP+DI+5678h], CL
+cs:03A8 D10F           ROR word ptr [BX]
+cs:03AA D24F78         ROR byte ptr [BX+78h], CL
+cs:03AD D18F5634       ROR word ptr [BX+3456h]
+cs:03B1 D3CF           ROR DI, CL
+cs:03B3 D04869         ROR byte ptr [BX+SI+69h]
+cs:03B6 D3887856       ROR word ptr [BX+SI+5678h], CL
+cs:03BA D109           ROR word ptr [BX+DI]
+cs:03BC D34949         ROR word ptr [BX+DI+49h], CL
+cs:03BF D1CE           ROR SI
+cs:03C1 D20C           ROR byte ptr [SI], CL
+cs:03C3 D14C78         ROR word ptr [SI+78h]
+cs:03C6 D28C5634       ROR byte ptr [SI+3456h], CL
+cs:03CA D10D           ROR word ptr [DI]
+cs:03CC D24D78         ROR byte ptr [DI+78h], CL
+cs:03CF D18D5634       ROR word ptr [DI+3456h]
+cs:03D3 D34E00         ROR word ptr [BP+00h], CL
+cs:03D6 D14E78         ROR word ptr [BP+78h]
+cs:03D9 D2CE           ROR DH, CL
+cs:03DB D00A           ROR byte ptr [BP+SI]
+cs:03DD D34A59         ROR word ptr [BP+SI+59h], CL
+cs:03E0 D18A7856       ROR word ptr [BP+SI+5678h]
+cs:03E4 D20B           ROR byte ptr [BP+DI], CL
+cs:03E6 D14B19         ROR word ptr [BP+DI+19h]
+cs:03E9 D38B7856       ROR word ptr [BP+DI+5678h], CL
+cs:03ED D11F           RCR word ptr [BX]
+cs:03EF D25F78         RCR byte ptr [BX+78h], CL
+cs:03F2 D19F5634       RCR word ptr [BX+3456h]
+cs:03F6 D3DF           RCR DI, CL
+cs:03F8 D05869         RCR byte ptr [BX+SI+69h]
+cs:03FB D3987856       RCR word ptr [BX+SI+5678h], CL
+cs:03FF D119           RCR word ptr [BX+DI]
+cs:0401 D35949         RCR word ptr [BX+DI+49h], CL
+cs:0404 D1DE           RCR SI
+cs:0406 D21C           RCR byte ptr [SI], CL
+cs:0408 D15C78         RCR word ptr [SI+78h]
+cs:040B D29C5634       RCR byte ptr [SI+3456h], CL
+cs:040F D11D           RCR word ptr [DI]
+cs:0411 D25D78         RCR byte ptr [DI+78h], CL
+cs:0414 D19D5634       RCR word ptr [DI+3456h]
+cs:0418 D35E00         RCR word ptr [BP+00h], CL
+cs:041B D15E78         RCR word ptr [BP+78h]
+cs:041E D2DE           RCR DH, CL
+cs:0420 D01A           RCR byte ptr [BP+SI]
+cs:0422 D35A59         RCR word ptr [BP+SI+59h], CL
+cs:0425 D19A7856       RCR word ptr [BP+SI+5678h]
+cs:0429 D21B           RCR byte ptr [BP+DI], CL
+cs:042B D15B19         RCR word ptr [BP+DI+19h]
+cs:042E D39B7856       RCR word ptr [BP+DI+5678h], CL
+cs:0432 D117           RCL word ptr [BX]
+cs:0434 D25778         RCL byte ptr [BX+78h], CL
+cs:0437 D1975634       RCL word ptr [BX+3456h]
+cs:043B D3D7           RCL DI, CL
+cs:043D D05069         RCL byte ptr [BX+SI+69h]
+cs:0440 D3907856       RCL word ptr [BX+SI+5678h], CL
+cs:0444 D111           RCL word ptr [BX+DI]
+cs:0446 D35149         RCL word ptr [BX+DI+49h], CL
+cs:0449 D1D6           RCL SI
+cs:044B D214           RCL byte ptr [SI], CL
+cs:044D D15478         RCL word ptr [SI+78h]
+cs:0450 D2945634       RCL byte ptr [SI+3456h], CL
+cs:0454 D115           RCL word ptr [DI]
+cs:0456 D25578         RCL byte ptr [DI+78h], CL
+cs:0459 D1955634       RCL word ptr [DI+3456h]
+cs:045D D35600         RCL word ptr [BP+00h], CL
+cs:0460 D15678         RCL word ptr [BP+78h]
+cs:0463 D2D6           RCL DH, CL
+cs:0465 D012           RCL byte ptr [BP+SI]
+cs:0467 D35259         RCL word ptr [BP+SI+59h], CL
+cs:046A D1927856       RCL word ptr [BP+SI+5678h]
+cs:046E D213           RCL byte ptr [BP+DI], CL
+cs:0470 D15319         RCL word ptr [BP+DI+19h]
+cs:0473 D3937856       RCL word ptr [BP+DI+5678h], CL
+cs:0477 F7D5           NOT BP
+cs:0479 F75658         NOT word ptr [BP+58h]
+cs:047C F7965634       NOT word ptr [BP+3456h]
+cs:0480 F7D1           NOT CX
+cs:0482 F75239         NOT word ptr [BP+SI+39h]
+cs:0485 F7927856       NOT word ptr [BP+SI+5678h]
+cs:0489 F7D2           NOT DX
+cs:048B F75349         NOT word ptr [BP+DI+49h]
+cs:048E F7D6           NOT SI
+cs:0490 F65578         NOT byte ptr [DI+78h]
+cs:0493 F6955634       NOT byte ptr [DI+3456h]
+cs:0497 F6D6           NOT DH
+cs:0499 F65678         NOT byte ptr [BP+78h]
+cs:049C F6965634       NOT byte ptr [BP+3456h]
+cs:04A0 F6D4           NOT AH
+cs:04A2 F6D3           NOT BL
+cs:04A4 F6955634       NOT byte ptr [DI+3456h]
+cs:04A8 230F           AND CX, [BX]
+cs:04AA 235778         AND DX, [BX+78h]
+cs:04AD 239F5634       AND BX, [BX+3456h]
+cs:04B1 2330           AND SI, [BX+SI]
+cs:04B3 237879         AND DI, [BX+SI+79h]
+cs:04B6 23A87856       AND BP, [BX+SI+5678h]
+cs:04BA 2331           AND SI, [BX+DI]
+cs:04BC 237929         AND DI, [BX+DI+29h]
+cs:04BF 23A97856       AND BP, [BX+DI+5678h]
+cs:04C3 2324           AND SP, [SI]
+cs:04C5 235428         AND DX, [SI+28h]
+cs:04C8 239C5634       AND BX, [SI+3456h]
+cs:04CC 2305           AND AX, [DI]
+cs:04CE 235558         AND DX, [DI+58h]
+cs:04D1 239D5634       AND BX, [DI+3456h]
+cs:04D5 234E00         AND CX, [BP+00h]
+cs:04D8 235658         AND DX, [BP+58h]
+cs:04DB 239E5634       AND BX, [BP+3456h]
+cs:04DF 2332           AND SI, [BP+SI]
+cs:04E1 237A39         AND DI, [BP+SI+39h]
+cs:04E4 23AA7856       AND BP, [BP+SI+5678h]
+cs:04E8 2333           AND SI, [BP+DI]
+cs:04EA 237B49         AND DI, [BP+DI+49h]
+cs:04ED 23AB7856       AND BP, [BP+DI+5678h]
+cs:04F1 210F           AND [BX], CX
+cs:04F3 215778         AND [BX+78h], DX
+cs:04F6 219F5634       AND [BX+3456h], BX
+cs:04FA 2100           AND [BX+SI], AX
+cs:04FC 216069         AND [BX+SI+69h], SP
+cs:04FF 21B87856       AND [BX+SI+5678h], DI
+cs:0503 2129           AND [BX+DI], BP
+cs:0505 217149         AND [BX+DI+49h], SI
+cs:0508 21B97856       AND [BX+DI+5678h], DI
+cs:050C 2104           AND [SI], AX
+cs:050E 214C78         AND [SI+78h], CX
+cs:0511 21945634       AND [SI+3456h], DX
+cs:0515 212D           AND [DI], BP
+cs:0517 216578         AND [DI+78h], SP
+cs:051A 21B55634       AND [DI+3456h], SI
+cs:051E 217E00         AND [BP+00h], DI
+cs:0521 214E78         AND [BP+78h], CX
+cs:0524 21965634       AND [BP+3456h], DX
+cs:0528 2132           AND [BP+SI], SI
+cs:052A 217A59         AND [BP+SI+59h], DI
+cs:052D 21827856       AND [BP+SI+5678h], AX
+cs:0531 213B           AND [BP+DI], DI
+cs:0533 215B19         AND [BP+DI+19h], BX
+cs:0536 21937856       AND [BP+DI+5678h], DX
+cs:053A 2205           AND AL, [DI]
+cs:053C 226578         AND AH, [DI+78h]
+cs:053F 22BD5634       AND BH, [DI+3456h]
+cs:0543 224E00         AND CL, [BP+00h]
+cs:0546 225678         AND DL, [BP+78h]
+cs:0549 229E5634       AND BL, [BP+3456h]
+cs:054D 222A           AND CH, [BP+SI]
+cs:054F 207578         AND [DI+78h], DH
+cs:0552 20955634       AND [DI+3456h], DL
+cs:0556 206E00         AND [BP+00h], CH
+cs:0559 204E56         AND [BP+56h], CL
+cs:055C 20BE5634       AND [BP+3456h], BH
+cs:0560 201A           AND [BP+SI], BL
+cs:0562 206245         AND [BP+SI+45h], AH
+cs:0565 20827856       AND [BP+SI+5678h], AL
+cs:0569 80657815       AND byte ptr [DI+78h], 15h
+cs:056D 80A5563416     AND byte ptr [DI+3456h], 16h
+cs:0572 80660028       AND byte ptr [BP+00h], 28h
+cs:0576 80665688       AND byte ptr [BP+56h], 88h
+cs:057A 81A656343412   AND word ptr [BP+3456h], 1234h
+cs:0580 81221534       AND word ptr [BP+SI], 3415h
+cs:0584 8162458547     AND word ptr [BP+SI+45h], 4785h
+cs:0589 81A278563615   AND word ptr [BP+SI+5678h], 1536h
+cs:058F 80E115         AND CL, 15h
+cs:0592 80E516         AND CH, 16h
+cs:0595 80E228         AND DL, 28h
+cs:0598 80E488         AND AH, 88h
+cs:059B 81E33412       AND BX, 1234h
+cs:059F 81E71534       AND DI, 3415h
+cs:05A3 81E48547       AND SP, 4785h
+cs:05A7 81E53615       AND BP, 1536h
+cs:05AB 2415           AND AL, 15h
+cs:05AD 251516         AND AX, 1615h
+cs:05B0 850F           TEST CX, [BX]
+cs:05B2 855778         TEST DX, [BX+78h]
+cs:05B5 859F5634       TEST BX, [BX+3456h]
+cs:05B9 8530           TEST SI, [BX+SI]
+cs:05BB 857879         TEST DI, [BX+SI+79h]
+cs:05BE 85A87856       TEST BP, [BX+SI+5678h]
+cs:05C2 8531           TEST SI, [BX+DI]
+cs:05C4 857929         TEST DI, [BX+DI+29h]
+cs:05C7 85A97856       TEST BP, [BX+DI+5678h]
+cs:05CB 8524           TEST SP, [SI]
+cs:05CD 855428         TEST DX, [SI+28h]
+cs:05D0 859C5634       TEST BX, [SI+3456h]
+cs:05D4 8505           TEST AX, [DI]
+cs:05D6 855558         TEST DX, [DI+58h]
+cs:05D9 859D5634       TEST BX, [DI+3456h]
+cs:05DD 854E00         TEST CX, [BP+00h]
+cs:05E0 855658         TEST DX, [BP+58h]
+cs:05E3 859E5634       TEST BX, [BP+3456h]
+cs:05E7 8532           TEST SI, [BP+SI]
+cs:05E9 857A39         TEST DI, [BP+SI+39h]
+cs:05EC 85AA7856       TEST BP, [BP+SI+5678h]
+cs:05F0 8533           TEST SI, [BP+DI]
+cs:05F2 857B49         TEST DI, [BP+DI+49h]
+cs:05F5 85AB7856       TEST BP, [BP+DI+5678h]
+cs:05F9 850F           TEST CX, [BX]
+cs:05FB 855778         TEST DX, [BX+78h]
+cs:05FE 859F5634       TEST BX, [BX+3456h]
+cs:0602 8500           TEST AX, [BX+SI]
+cs:0604 856069         TEST SP, [BX+SI+69h]
+cs:0607 85B87856       TEST DI, [BX+SI+5678h]
+cs:060B 8529           TEST BP, [BX+DI]
+cs:060D 857149         TEST SI, [BX+DI+49h]
+cs:0610 85B97856       TEST DI, [BX+DI+5678h]
+cs:0614 8504           TEST AX, [SI]
+cs:0616 854C78         TEST CX, [SI+78h]
+cs:0619 85945634       TEST DX, [SI+3456h]
+cs:061D 852D           TEST BP, [DI]
+cs:061F 856578         TEST SP, [DI+78h]
+cs:0622 85B55634       TEST SI, [DI+3456h]
+cs:0626 857E00         TEST DI, [BP+00h]
+cs:0629 854E78         TEST CX, [BP+78h]
+cs:062C 85965634       TEST DX, [BP+3456h]
+cs:0630 8532           TEST SI, [BP+SI]
+cs:0632 857A59         TEST DI, [BP+SI+59h]
+cs:0635 85827856       TEST AX, [BP+SI+5678h]
+cs:0639 853B           TEST DI, [BP+DI]
+cs:063B 855B19         TEST BX, [BP+DI+19h]
+cs:063E 85937856       TEST DX, [BP+DI+5678h]
+cs:0642 8405           TEST AL, [DI]
+cs:0644 846578         TEST AH, [DI+78h]
+cs:0647 84BD5634       TEST BH, [DI+3456h]
+cs:064B 844E00         TEST CL, [BP+00h]
+cs:064E 845678         TEST DL, [BP+78h]
+cs:0651 849E5634       TEST BL, [BP+3456h]
+cs:0655 842A           TEST CH, [BP+SI]
+cs:0657 847578         TEST DH, [DI+78h]
+cs:065A 84955634       TEST DL, [DI+3456h]
+cs:065E 846E00         TEST CH, [BP+00h]
+cs:0661 844E56         TEST CL, [BP+56h]
+cs:0664 84BE5634       TEST BH, [BP+3456h]
+cs:0668 841A           TEST BL, [BP+SI]
+cs:066A 846245         TEST AH, [BP+SI+45h]
+cs:066D 84827856       TEST AL, [BP+SI+5678h]
+cs:0671 F6457815       TEST byte ptr [DI+78h], 15h
+cs:0675 F685563416     TEST byte ptr [DI+3456h], 16h
+cs:067A F6460028       TEST byte ptr [BP+00h], 28h
+cs:067E F6465688       TEST byte ptr [BP+56h], 88h
+cs:0682 F78656343412   TEST word ptr [BP+3456h], 1234h
+cs:0688 F7021534       TEST word ptr [BP+SI], 3415h
+cs:068C F742458547     TEST word ptr [BP+SI+45h], 4785h
+cs:0691 F78278563615   TEST word ptr [BP+SI+5678h], 1536h
+cs:0697 F6C115         TEST CL, 15h
+cs:069A F6C516         TEST CH, 16h
+cs:069D F6C228         TEST DL, 28h
+cs:06A0 F6C488         TEST AH, 88h
+cs:06A3 F7C33412       TEST BX, 1234h
+cs:06A7 F7C71534       TEST DI, 3415h
+cs:06AB F7C48547       TEST SP, 4785h
+cs:06AF F7C53615       TEST BP, 1536h
+cs:06B3 A815           TEST AL, 15h
+cs:06B5 A91516         TEST AX, 1615h
+cs:06B8 0B0F           OR CX, [BX]
+cs:06BA 0B5778         OR DX, [BX+78h]
+cs:06BD 0B9F5634       OR BX, [BX+3456h]
+cs:06C1 0B30           OR SI, [BX+SI]
+cs:06C3 0B7879         OR DI, [BX+SI+79h]
+cs:06C6 0BA87856       OR BP, [BX+SI+5678h]
+cs:06CA 0B31           OR SI, [BX+DI]
+cs:06CC 0B7929         OR DI, [BX+DI+29h]
+cs:06CF 0BA97856       OR BP, [BX+DI+5678h]
+cs:06D3 0B24           OR SP, [SI]
+cs:06D5 0B5428         OR DX, [SI+28h]
+cs:06D8 0B9C5634       OR BX, [SI+3456h]
+cs:06DC 0B05           OR AX, [DI]
+cs:06DE 0B5558         OR DX, [DI+58h]
+cs:06E1 0B9D5634       OR BX, [DI+3456h]
+cs:06E5 0B4E00         OR CX, [BP+00h]
+cs:06E8 0B5658         OR DX, [BP+58h]
+cs:06EB 0B9E5634       OR BX, [BP+3456h]
+cs:06EF 0B32           OR SI, [BP+SI]
+cs:06F1 0B7A39         OR DI, [BP+SI+39h]
+cs:06F4 0BAA7856       OR BP, [BP+SI+5678h]
+cs:06F8 0B33           OR SI, [BP+DI]
+cs:06FA 0B7B49         OR DI, [BP+DI+49h]
+cs:06FD 0BAB7856       OR BP, [BP+DI+5678h]
+cs:0701 090F           OR [BX], CX
+cs:0703 095778         OR [BX+78h], DX
+cs:0706 099F5634       OR [BX+3456h], BX
+cs:070A 0900           OR [BX+SI], AX
+cs:070C 096069         OR [BX+SI+69h], SP
+cs:070F 09B87856       OR [BX+SI+5678h], DI
+cs:0713 0929           OR [BX+DI], BP
+cs:0715 097149         OR [BX+DI+49h], SI
+cs:0718 09B97856       OR [BX+DI+5678h], DI
+cs:071C 0904           OR [SI], AX
+cs:071E 094C78         OR [SI+78h], CX
+cs:0721 09945634       OR [SI+3456h], DX
+cs:0725 092D           OR [DI], BP
+cs:0727 096578         OR [DI+78h], SP
+cs:072A 09B55634       OR [DI+3456h], SI
+cs:072E 097E00         OR [BP+00h], DI
+cs:0731 094E78         OR [BP+78h], CX
+cs:0734 09965634       OR [BP+3456h], DX
+cs:0738 0932           OR [BP+SI], SI
+cs:073A 097A59         OR [BP+SI+59h], DI
+cs:073D 09827856       OR [BP+SI+5678h], AX
+cs:0741 093B           OR [BP+DI], DI
+cs:0743 095B19         OR [BP+DI+19h], BX
+cs:0746 09937856       OR [BP+DI+5678h], DX
+cs:074A 0A05           OR AL, [DI]
+cs:074C 0A6578         OR AH, [DI+78h]
+cs:074F 0ABD5634       OR BH, [DI+3456h]
+cs:0753 0A4E00         OR CL, [BP+00h]
+cs:0756 0A5678         OR DL, [BP+78h]
+cs:0759 0A9E5634       OR BL, [BP+3456h]
+cs:075D 0A2A           OR CH, [BP+SI]
+cs:075F 087578         OR [DI+78h], DH
+cs:0762 08955634       OR [DI+3456h], DL
+cs:0766 086E00         OR [BP+00h], CH
+cs:0769 084E56         OR [BP+56h], CL
+cs:076C 08BE5634       OR [BP+3456h], BH
+cs:0770 081A           OR [BP+SI], BL
+cs:0772 086245         OR [BP+SI+45h], AH
+cs:0775 08827856       OR [BP+SI+5678h], AL
+cs:0779 804D7815       OR byte ptr [DI+78h], 15h
+cs:077D 808D563416     OR byte ptr [DI+3456h], 16h
+cs:0782 804E0028       OR byte ptr [BP+00h], 28h
+cs:0786 804E5688       OR byte ptr [BP+56h], 88h
+cs:078A 818E56343412   OR word ptr [BP+3456h], 1234h
+cs:0790 810A1534       OR word ptr [BP+SI], 3415h
+cs:0794 814A458547     OR word ptr [BP+SI+45h], 4785h
+cs:0799 818A78563615   OR word ptr [BP+SI+5678h], 1536h
+cs:079F 80C915         OR CL, 15h
+cs:07A2 80CD16         OR CH, 16h
+cs:07A5 80CA28         OR DL, 28h
+cs:07A8 80CC88         OR AH, 88h
+cs:07AB 81CB3412       OR BX, 1234h
+cs:07AF 81CF1534       OR DI, 3415h
+cs:07B3 81CC8547       OR SP, 4785h
+cs:07B7 81CD3615       OR BP, 1536h
+cs:07BB 0C15           OR AL, 15h
+cs:07BD 0D1716         OR AX, 1617h
+cs:07C0 330F           XOR CX, [BX]
+cs:07C2 335778         XOR DX, [BX+78h]
+cs:07C5 339F5634       XOR BX, [BX+3456h]
+cs:07C9 3330           XOR SI, [BX+SI]
+cs:07CB 337879         XOR DI, [BX+SI+79h]
+cs:07CE 33A87856       XOR BP, [BX+SI+5678h]
+cs:07D2 3331           XOR SI, [BX+DI]
+cs:07D4 337929         XOR DI, [BX+DI+29h]
+cs:07D7 33A97856       XOR BP, [BX+DI+5678h]
+cs:07DB 3324           XOR SP, [SI]
+cs:07DD 335428         XOR DX, [SI+28h]
+cs:07E0 339C5634       XOR BX, [SI+3456h]
+cs:07E4 3305           XOR AX, [DI]
+cs:07E6 335558         XOR DX, [DI+58h]
+cs:07E9 339D5634       XOR BX, [DI+3456h]
+cs:07ED 334E00         XOR CX, [BP+00h]
+cs:07F0 335658         XOR DX, [BP+58h]
+cs:07F3 339E5634       XOR BX, [BP+3456h]
+cs:07F7 3332           XOR SI, [BP+SI]
+cs:07F9 337A39         XOR DI, [BP+SI+39h]
+cs:07FC 33AA7856       XOR BP, [BP+SI+5678h]
+cs:0800 3333           XOR SI, [BP+DI]
+cs:0802 337B49         XOR DI, [BP+DI+49h]
+cs:0805 33AB7856       XOR BP, [BP+DI+5678h]
+cs:0809 310F           XOR [BX], CX
+cs:080B 315778         XOR [BX+78h], DX
+cs:080E 319F5634       XOR [BX+3456h], BX
+cs:0812 3100           XOR [BX+SI], AX
+cs:0814 316069         XOR [BX+SI+69h], SP
+cs:0817 31B87856       XOR [BX+SI+5678h], DI
+cs:081B 3129           XOR [BX+DI], BP
+cs:081D 317149         XOR [BX+DI+49h], SI
+cs:0820 31B97856       XOR [BX+DI+5678h], DI
+cs:0824 3104           XOR [SI], AX
+cs:0826 314C78         XOR [SI+78h], CX
+cs:0829 31945634       XOR [SI+3456h], DX
+cs:082D 312D           XOR [DI], BP
+cs:082F 316578         XOR [DI+78h], SP
+cs:0832 31B55634       XOR [DI+3456h], SI
+cs:0836 317E00         XOR [BP+00h], DI
+cs:0839 314E78         XOR [BP+78h], CX
+cs:083C 31965634       XOR [BP+3456h], DX
+cs:0840 3132           XOR [BP+SI], SI
+cs:0842 317A59         XOR [BP+SI+59h], DI
+cs:0845 31827856       XOR [BP+SI+5678h], AX
+cs:0849 313B           XOR [BP+DI], DI
+cs:084B 315B19         XOR [BP+DI+19h], BX
+cs:084E 31937856       XOR [BP+DI+5678h], DX
+cs:0852 3205           XOR AL, [DI]
+cs:0854 326578         XOR AH, [DI+78h]
+cs:0857 32BD5634       XOR BH, [DI+3456h]
+cs:085B 324E00         XOR CL, [BP+00h]
+cs:085E 325678         XOR DL, [BP+78h]
+cs:0861 329E5634       XOR BL, [BP+3456h]
+cs:0865 322A           XOR CH, [BP+SI]
+cs:0867 307578         XOR [DI+78h], DH
+cs:086A 30955634       XOR [DI+3456h], DL
+cs:086E 306E00         XOR [BP+00h], CH
+cs:0871 304E56         XOR [BP+56h], CL
+cs:0874 30BE5634       XOR [BP+3456h], BH
+cs:0878 301A           XOR [BP+SI], BL
+cs:087A 306245         XOR [BP+SI+45h], AH
+cs:087D 30827856       XOR [BP+SI+5678h], AL
+cs:0881 80757815       XOR byte ptr [DI+78h], 15h
+cs:0885 80B5563416     XOR byte ptr [DI+3456h], 16h
+cs:088A 80760028       XOR byte ptr [BP+00h], 28h
+cs:088E 80765688       XOR byte ptr [BP+56h], 88h
+cs:0892 81B656343412   XOR word ptr [BP+3456h], 1234h
+cs:0898 81321534       XOR word ptr [BP+SI], 3415h
+cs:089C 8172458547     XOR word ptr [BP+SI+45h], 4785h
+cs:08A1 81B278563615   XOR word ptr [BP+SI+5678h], 1536h
+cs:08A7 80F115         XOR CL, 15h
+cs:08AA 80F516         XOR CH, 16h
+cs:08AD 80F228         XOR DL, 28h
+cs:08B0 80F488         XOR AH, 88h
+cs:08B3 81F33412       XOR BX, 1234h
+cs:08B7 81F71534       XOR DI, 3415h
+cs:08BB 81F48547       XOR SP, 4785h
+cs:08BF 81F53615       XOR BP, 1536h
+cs:08C3 3418           XOR AL, 18h
+cs:08C5 357756         XOR AX, 5677h
+cs:08C8 AC             LODSB
+cs:08C9 AD             LODSW
+cs:08CA A4             MOVSB
+cs:08CB A5             MOVSW
+cs:08CC A6             CMPSB
+cs:08CD A7             CMPSW
+cs:08CE AE             SCASB
+cs:08CF AF             SCASW
+cs:08D0 AA             STOSB
+cs:08D1 AB             STOSW
+cs:08D2 F3             REP
+cs:08D3 A6             CMPSB
+cs:08D4 F2             REPNZ
+cs:08D5 A6             CMPSB
+cs:08D6 F8             CLC
+cs:08D7 F5             CMC
+cs:08D8 F9             STC
+cs:08D9 FC             CLD
+cs:08DA FD             STD
+cs:08DB FA             CLI
+cs:08DC FB             STI
+cs:08DD F4             HLT
+cs:08DE FF37           PUSH word ptr [BX]
+cs:08E0 FF7778         PUSH word ptr [BX+78h]
+cs:08E3 FFB75634       PUSH word ptr [BX+3456h]
+cs:08E7 FF30           PUSH word ptr [BX+SI]
+cs:08E9 FF7079         PUSH word ptr [BX+SI+79h]
+cs:08EC FFB07856       PUSH word ptr [BX+SI+5678h]
+cs:08F0 FF31           PUSH word ptr [BX+DI]
+cs:08F2 FF35           PUSH word ptr [DI]
+cs:08F4 FF7558         PUSH word ptr [DI+58h]
+cs:08F7 FFB55634       PUSH word ptr [DI+3456h]
+cs:08FB FF7600         PUSH word ptr [BP+00h]
+cs:08FE FF7658         PUSH word ptr [BP+58h]
+cs:0901 FFB65634       PUSH word ptr [BP+3456h]
+cs:0905 FFB37856       PUSH word ptr [BP+DI+5678h]
+cs:0909 1E             PUSH DS
+cs:090A 0E             PUSH CS
+cs:090B 16             PUSH SS
+cs:090C 06             PUSH ES
+cs:090D 8F07           POP word ptr [BX]
+cs:090F 8F4778         POP word ptr [BX+78h]
+cs:0912 8F875634       POP word ptr [BX+3456h]
+cs:0916 8F00           POP word ptr [BX+SI]
+cs:0918 8F4079         POP word ptr [BX+SI+79h]
+cs:091B 8F807856       POP word ptr [BX+SI+5678h]
+cs:091F 8F01           POP word ptr [BX+DI]
+cs:0921 8F05           POP word ptr [DI]
+cs:0923 8F4558         POP word ptr [DI+58h]
+cs:0926 8F855634       POP word ptr [DI+3456h]
+cs:092A 8F4600         POP word ptr [BP+00h]
+cs:092D 8F4658         POP word ptr [BP+58h]
+cs:0930 8F865634       POP word ptr [BP+3456h]
+cs:0934 8F837856       POP word ptr [BP+DI+5678h]
+cs:0938 1F             POP DS
+cs:0939 0F             POP CS
+cs:093A 17             POP SS
+cs:093B 07             POP ES
+cs:093C 50             PUSH AX
+cs:093D 51             PUSH CX
+cs:093E 52             PUSH DX
+cs:093F 53             PUSH BX
+cs:0940 54             PUSH SP
+cs:0941 55             PUSH BP
+cs:0942 56             PUSH SI
+cs:0943 57             PUSH DI
+cs:0944 58             POP AX
+cs:0945 59             POP CX
+cs:0946 5A             POP DX
+cs:0947 5B             POP BX
+cs:0948 5C             POP SP
+cs:0949 5D             POP BP
+cs:094A 5E             POP SI
+cs:094B 5F             POP DI
+cs:094C 86E0           XCHG AH, AL
+cs:094E 86E1           XCHG AH, CL
+cs:0950 86D8           XCHG BL, AL
+cs:0952 86EA           XCHG CH, DL
+cs:0954 86FE           XCHG BH, DH
+cs:0956 87CB           XCHG CX, BX
+cs:0958 87DB           XCHG BX, BX
+cs:095A 87CA           XCHG CX, DX
+cs:095C 87D9           XCHG BX, CX
+cs:095E 87EC           XCHG BP, SP
+cs:0960 87FE           XCHG DI, SI
+cs:0962 87F9           XCHG DI, CX
+cs:0964 87F7           XCHG SI, DI
+cs:0966 87CD           XCHG CX, BP
+cs:0968 87EA           XCHG BP, DX
+cs:096A 8607           XCHG AL, [BX]
+cs:096C 864E00         XCHG CL, [BP+00h]
+cs:096F 8600           XCHG AL, [BX+SI]
+cs:0971 86964523       XCHG DL, [BP+2345h]
+cs:0975 86B45423       XCHG DH, [SI+2354h]
+cs:0979 8737           XCHG SI, [BX]
+cs:097B 870B           XCHG CX, [BP+DI]
+cs:097D 874015         XCHG AX, [BX+SI+15h]
+cs:0980 87AB4523       XCHG BP, [BP+DI+2345h]
+cs:0984 87945423       XCHG DX, [SI+2354h]
+cs:0988 90             NOP
+cs:0989 91             XCHG AX, CX
+cs:098A 92             XCHG AX, DX
+cs:098B 93             XCHG AX, BX
+cs:098C 94             XCHG AX, SP
+cs:098D 95             XCHG AX, BP
+cs:098E 96             XCHG AX, SI
+cs:098F 97             XCHG AX, DI
+cs:0990 E412           IN AL, 12
+cs:0992 E515           IN AX, 15
+cs:0994 EC             IN AL, DX
+cs:0995 ED             IN AX, DX
+cs:0996 E611           OUT 11, AL
+cs:0998 E72D           OUT 2D, AX
+cs:099A EE             OUT DX, AL
+cs:099B EF             OUT DX, AX
+cs:099C D7             XLAT
+cs:099D 8D985423       LEA BX, [BX+SI+2354h]
+cs:09A1 8D4A54         LEA CX, [BP+SI+54h]
+cs:09A4 8D5600         LEA DX, [BP+00h]
+cs:09A7 C4985423       LES BX, [BX+SI+2354h]
+cs:09AB C54A54         LDS CX, [BP+SI+54h]
+cs:09AE C45600         LES DX, [BP+00h]
+cs:09B1 9F             LAHF
+cs:09B2 9E             SAHF
+cs:09B3 9C             PUSHF
+cs:09B4 9D             POPF
+cs:09B5 030F           ADD CX, [BX]
+cs:09B7 035778         ADD DX, [BX+78h]
+cs:09BA 039F5634       ADD BX, [BX+3456h]
+cs:09BE 0330           ADD SI, [BX+SI]
+cs:09C0 037879         ADD DI, [BX+SI+79h]
+cs:09C3 03A87856       ADD BP, [BX+SI+5678h]
+cs:09C7 0331           ADD SI, [BX+DI]
+cs:09C9 037929         ADD DI, [BX+DI+29h]
+cs:09CC 03A97856       ADD BP, [BX+DI+5678h]
+cs:09D0 0324           ADD SP, [SI]
+cs:09D2 035428         ADD DX, [SI+28h]
+cs:09D5 039C5634       ADD BX, [SI+3456h]
+cs:09D9 0305           ADD AX, [DI]
+cs:09DB 035558         ADD DX, [DI+58h]
+cs:09DE 039D5634       ADD BX, [DI+3456h]
+cs:09E2 034E00         ADD CX, [BP+00h]
+cs:09E5 035658         ADD DX, [BP+58h]
+cs:09E8 039E5634       ADD BX, [BP+3456h]
+cs:09EC 0332           ADD SI, [BP+SI]
+cs:09EE 037A39         ADD DI, [BP+SI+39h]
+cs:09F1 03AA7856       ADD BP, [BP+SI+5678h]
+cs:09F5 0333           ADD SI, [BP+DI]
+cs:09F7 037B49         ADD DI, [BP+DI+49h]
+cs:09FA 03AB7856       ADD BP, [BP+DI+5678h]
+cs:09FE 010F           ADD [BX], CX
+cs:0A00 015778         ADD [BX+78h], DX
+cs:0A03 019F5634       ADD [BX+3456h], BX
+cs:0A07 0100           ADD [BX+SI], AX
+cs:0A09 016069         ADD [BX+SI+69h], SP
+cs:0A0C 01B87856       ADD [BX+SI+5678h], DI
+cs:0A10 0129           ADD [BX+DI], BP
+cs:0A12 017149         ADD [BX+DI+49h], SI
+cs:0A15 01B97856       ADD [BX+DI+5678h], DI
+cs:0A19 0104           ADD [SI], AX
+cs:0A1B 014C78         ADD [SI+78h], CX
+cs:0A1E 01945634       ADD [SI+3456h], DX
+cs:0A22 012D           ADD [DI], BP
+cs:0A24 016578         ADD [DI+78h], SP
+cs:0A27 01B55634       ADD [DI+3456h], SI
+cs:0A2B 017E00         ADD [BP+00h], DI
+cs:0A2E 014E78         ADD [BP+78h], CX
+cs:0A31 01965634       ADD [BP+3456h], DX
+cs:0A35 0132           ADD [BP+SI], SI
+cs:0A37 017A59         ADD [BP+SI+59h], DI
+cs:0A3A 01827856       ADD [BP+SI+5678h], AX
+cs:0A3E 013B           ADD [BP+DI], DI
+cs:0A40 015B19         ADD [BP+DI+19h], BX
+cs:0A43 01937856       ADD [BP+DI+5678h], DX
+cs:0A47 0205           ADD AL, [DI]
+cs:0A49 026578         ADD AH, [DI+78h]
+cs:0A4C 02BD5634       ADD BH, [DI+3456h]
+cs:0A50 024E00         ADD CL, [BP+00h]
+cs:0A53 025678         ADD DL, [BP+78h]
+cs:0A56 029E5634       ADD BL, [BP+3456h]
+cs:0A5A 022A           ADD CH, [BP+SI]
+cs:0A5C 007578         ADD [DI+78h], DH
+cs:0A5F 00955634       ADD [DI+3456h], DL
+cs:0A63 006E00         ADD [BP+00h], CH
+cs:0A66 004E56         ADD [BP+56h], CL
+cs:0A69 00BE5634       ADD [BP+3456h], BH
+cs:0A6D 001A           ADD [BP+SI], BL
+cs:0A6F 006245         ADD [BP+SI+45h], AH
+cs:0A72 00827856       ADD [BP+SI+5678h], AL
+cs:0A76 80457815       ADD byte ptr [DI+78h], 15h
+cs:0A7A 8085563416     ADD byte ptr [DI+3456h], 16h
+cs:0A7F 80460028       ADD byte ptr [BP+00h], 28h
+cs:0A83 80465688       ADD byte ptr [BP+56h], 88h
+cs:0A87 818656343412   ADD word ptr [BP+3456h], 1234h
+cs:0A8D 81021534       ADD word ptr [BP+SI], 3415h
+cs:0A91 8142458547     ADD word ptr [BP+SI+45h], 4785h
+cs:0A96 818278563615   ADD word ptr [BP+SI+5678h], 1536h
+cs:0A9C 80C115         ADD CL, 15h
+cs:0A9F 80C516         ADD CH, 16h
+cs:0AA2 80C228         ADD DL, 28h
+cs:0AA5 80C488         ADD AH, 88h
+cs:0AA8 81C33412       ADD BX, 1234h
+cs:0AAC 81C71534       ADD DI, 3415h
+cs:0AB0 81C48547       ADD SP, 4785h
+cs:0AB4 81C53615       ADD BP, 1536h
+cs:0AB8 0417           ADD AL, 17h
+cs:0ABA 051752         ADD AX, 5217h
+cs:0ABD 130F           ADC CX, [BX]
+cs:0ABF 135778         ADC DX, [BX+78h]
+cs:0AC2 139F5634       ADC BX, [BX+3456h]
+cs:0AC6 1330           ADC SI, [BX+SI]
+cs:0AC8 137879         ADC DI, [BX+SI+79h]
+cs:0ACB 13A87856       ADC BP, [BX+SI+5678h]
+cs:0ACF 1331           ADC SI, [BX+DI]
+cs:0AD1 137929         ADC DI, [BX+DI+29h]
+cs:0AD4 13A97856       ADC BP, [BX+DI+5678h]
+cs:0AD8 1324           ADC SP, [SI]
+cs:0ADA 135428         ADC DX, [SI+28h]
+cs:0ADD 139C5634       ADC BX, [SI+3456h]
+cs:0AE1 1305           ADC AX, [DI]
+cs:0AE3 135558         ADC DX, [DI+58h]
+cs:0AE6 139D5634       ADC BX, [DI+3456h]
+cs:0AEA 134E00         ADC CX, [BP+00h]
+cs:0AED 135658         ADC DX, [BP+58h]
+cs:0AF0 139E5634       ADC BX, [BP+3456h]
+cs:0AF4 1332           ADC SI, [BP+SI]
+cs:0AF6 137A39         ADC DI, [BP+SI+39h]
+cs:0AF9 13AA7856       ADC BP, [BP+SI+5678h]
+cs:0AFD 1333           ADC SI, [BP+DI]
+cs:0AFF 137B49         ADC DI, [BP+DI+49h]
+cs:0B02 13AB7856       ADC BP, [BP+DI+5678h]
+cs:0B06 110F           ADC [BX], CX
+cs:0B08 115778         ADC [BX+78h], DX
+cs:0B0B 119F5634       ADC [BX+3456h], BX
+cs:0B0F 1100           ADC [BX+SI], AX
+cs:0B11 116069         ADC [BX+SI+69h], SP
+cs:0B14 11B87856       ADC [BX+SI+5678h], DI
+cs:0B18 1129           ADC [BX+DI], BP
+cs:0B1A 117149         ADC [BX+DI+49h], SI
+cs:0B1D 11B97856       ADC [BX+DI+5678h], DI
+cs:0B21 1104           ADC [SI], AX
+cs:0B23 114C78         ADC [SI+78h], CX
+cs:0B26 11945634       ADC [SI+3456h], DX
+cs:0B2A 112D           ADC [DI], BP
+cs:0B2C 116578         ADC [DI+78h], SP
+cs:0B2F 11B55634       ADC [DI+3456h], SI
+cs:0B33 117E00         ADC [BP+00h], DI
+cs:0B36 114E78         ADC [BP+78h], CX
+cs:0B39 11965634       ADC [BP+3456h], DX
+cs:0B3D 1132           ADC [BP+SI], SI
+cs:0B3F 117A59         ADC [BP+SI+59h], DI
+cs:0B42 11827856       ADC [BP+SI+5678h], AX
+cs:0B46 113B           ADC [BP+DI], DI
+cs:0B48 115B19         ADC [BP+DI+19h], BX
+cs:0B4B 11937856       ADC [BP+DI+5678h], DX
+cs:0B4F 1205           ADC AL, [DI]
+cs:0B51 126578         ADC AH, [DI+78h]
+cs:0B54 12BD5634       ADC BH, [DI+3456h]
+cs:0B58 124E00         ADC CL, [BP+00h]
+cs:0B5B 125678         ADC DL, [BP+78h]
+cs:0B5E 129E5634       ADC BL, [BP+3456h]
+cs:0B62 122A           ADC CH, [BP+SI]
+cs:0B64 107578         ADC [DI+78h], DH
+cs:0B67 10955634       ADC [DI+3456h], DL
+cs:0B6B 106E00         ADC [BP+00h], CH
+cs:0B6E 104E56         ADC [BP+56h], CL
+cs:0B71 10BE5634       ADC [BP+3456h], BH
+cs:0B75 101A           ADC [BP+SI], BL
+cs:0B77 106245         ADC [BP+SI+45h], AH
+cs:0B7A 10827856       ADC [BP+SI+5678h], AL
+cs:0B7E 80557815       ADC byte ptr [DI+78h], 15h
+cs:0B82 8095563416     ADC byte ptr [DI+3456h], 16h
+cs:0B87 80560028       ADC byte ptr [BP+00h], 28h
+cs:0B8B 80565688       ADC byte ptr [BP+56h], 88h
+cs:0B8F 819656343412   ADC word ptr [BP+3456h], 1234h
+cs:0B95 81121534       ADC word ptr [BP+SI], 3415h
+cs:0B99 8152458547     ADC word ptr [BP+SI+45h], 4785h
+cs:0B9E 819278563615   ADC word ptr [BP+SI+5678h], 1536h
+cs:0BA4 80D115         ADC CL, 15h
+cs:0BA7 80D516         ADC CH, 16h
+cs:0BAA 80D228         ADC DL, 28h
+cs:0BAD 80D488         ADC AH, 88h
+cs:0BB0 81D33412       ADC BX, 1234h
+cs:0BB4 81D71534       ADC DI, 3415h
+cs:0BB8 81D48547       ADC SP, 4785h
+cs:0BBC 81D53615       ADC BP, 1536h
+cs:0BC0 0417           ADD AL, 17h
+cs:0BC2 051752         ADD AX, 5217h
+cs:0BC5 3B0F           CMP CX, [BX]
+cs:0BC7 3B5778         CMP DX, [BX+78h]
+cs:0BCA 3B9F5634       CMP BX, [BX+3456h]
+cs:0BCE 3B30           CMP SI, [BX+SI]
+cs:0BD0 3B7879         CMP DI, [BX+SI+79h]
+cs:0BD3 3BA87856       CMP BP, [BX+SI+5678h]
+cs:0BD7 3B31           CMP SI, [BX+DI]
+cs:0BD9 3B7929         CMP DI, [BX+DI+29h]
+cs:0BDC 3BA97856       CMP BP, [BX+DI+5678h]
+cs:0BE0 3B24           CMP SP, [SI]
+cs:0BE2 3B5428         CMP DX, [SI+28h]
+cs:0BE5 3B9C5634       CMP BX, [SI+3456h]
+cs:0BE9 3B05           CMP AX, [DI]
+cs:0BEB 3B5558         CMP DX, [DI+58h]
+cs:0BEE 3B9D5634       CMP BX, [DI+3456h]
+cs:0BF2 3B4E00         CMP CX, [BP+00h]
+cs:0BF5 3B5658         CMP DX, [BP+58h]
+cs:0BF8 3B9E5634       CMP BX, [BP+3456h]
+cs:0BFC 3B32           CMP SI, [BP+SI]
+cs:0BFE 3B7A39         CMP DI, [BP+SI+39h]
+cs:0C01 3BAA7856       CMP BP, [BP+SI+5678h]
+cs:0C05 3B33           CMP SI, [BP+DI]
+cs:0C07 3B7B49         CMP DI, [BP+DI+49h]
+cs:0C0A 3BAB7856       CMP BP, [BP+DI+5678h]
+cs:0C0E 390F           CMP [BX], CX
+cs:0C10 395778         CMP [BX+78h], DX
+cs:0C13 399F5634       CMP [BX+3456h], BX
+cs:0C17 3900           CMP [BX+SI], AX
+cs:0C19 396069         CMP [BX+SI+69h], SP
+cs:0C1C 39B87856       CMP [BX+SI+5678h], DI
+cs:0C20 3929           CMP [BX+DI], BP
+cs:0C22 397149         CMP [BX+DI+49h], SI
+cs:0C25 39B97856       CMP [BX+DI+5678h], DI
+cs:0C29 3904           CMP [SI], AX
+cs:0C2B 394C78         CMP [SI+78h], CX
+cs:0C2E 39945634       CMP [SI+3456h], DX
+cs:0C32 392D           CMP [DI], BP
+cs:0C34 396578         CMP [DI+78h], SP
+cs:0C37 39B55634       CMP [DI+3456h], SI
+cs:0C3B 397E00         CMP [BP+00h], DI
+cs:0C3E 394E78         CMP [BP+78h], CX
+cs:0C41 39965634       CMP [BP+3456h], DX
+cs:0C45 3932           CMP [BP+SI], SI
+cs:0C47 397A59         CMP [BP+SI+59h], DI
+cs:0C4A 39827856       CMP [BP+SI+5678h], AX
+cs:0C4E 393B           CMP [BP+DI], DI
+cs:0C50 395B19         CMP [BP+DI+19h], BX
+cs:0C53 39937856       CMP [BP+DI+5678h], DX
+cs:0C57 3A05           CMP AL, [DI]
+cs:0C59 3A6578         CMP AH, [DI+78h]
+cs:0C5C 3ABD5634       CMP BH, [DI+3456h]
+cs:0C60 3A4E00         CMP CL, [BP+00h]
+cs:0C63 3A5678         CMP DL, [BP+78h]
+cs:0C66 3A9E5634       CMP BL, [BP+3456h]
+cs:0C6A 3A2A           CMP CH, [BP+SI]
+cs:0C6C 387578         CMP [DI+78h], DH
+cs:0C6F 38955634       CMP [DI+3456h], DL
+cs:0C73 386E00         CMP [BP+00h], CH
+cs:0C76 384E56         CMP [BP+56h], CL
+cs:0C79 38BE5634       CMP [BP+3456h], BH
+cs:0C7D 381A           CMP [BP+SI], BL
+cs:0C7F 386245         CMP [BP+SI+45h], AH
+cs:0C82 38827856       CMP [BP+SI+5678h], AL
+cs:0C86 807D7815       CMP byte ptr [DI+78h], 15h
+cs:0C8A 80BD563416     CMP byte ptr [DI+3456h], 16h
+cs:0C8F 807E0028       CMP byte ptr [BP+00h], 28h
+cs:0C93 807E5688       CMP byte ptr [BP+56h], 88h
+cs:0C97 81BE56343412   CMP word ptr [BP+3456h], 1234h
+cs:0C9D 813A1534       CMP word ptr [BP+SI], 3415h
+cs:0CA1 817A458547     CMP word ptr [BP+SI+45h], 4785h
+cs:0CA6 81BA78563615   CMP word ptr [BP+SI+5678h], 1536h
+cs:0CAC 80F915         CMP CL, 15h
+cs:0CAF 80FD16         CMP CH, 16h
+cs:0CB2 80FA28         CMP DL, 28h
+cs:0CB5 80FC88         CMP AH, 88h
+cs:0CB8 81FB3412       CMP BX, 1234h
+cs:0CBC 81FF1534       CMP DI, 3415h
+cs:0CC0 81FC8547       CMP SP, 4785h
+cs:0CC4 81FD3615       CMP BP, 1536h
+cs:0CC8 0417           ADD AL, 17h
+cs:0CCA 051752         ADD AX, 5217h
+cs:0CCD 2B0F           SUB CX, [BX]
+cs:0CCF 2B5778         SUB DX, [BX+78h]
+cs:0CD2 2B9F5634       SUB BX, [BX+3456h]
+cs:0CD6 2B30           SUB SI, [BX+SI]
+cs:0CD8 2B7879         SUB DI, [BX+SI+79h]
+cs:0CDB 2BA87856       SUB BP, [BX+SI+5678h]
+cs:0CDF 2B31           SUB SI, [BX+DI]
+cs:0CE1 2B7929         SUB DI, [BX+DI+29h]
+cs:0CE4 2BA97856       SUB BP, [BX+DI+5678h]
+cs:0CE8 2B24           SUB SP, [SI]
+cs:0CEA 2B5428         SUB DX, [SI+28h]
+cs:0CED 2B9C5634       SUB BX, [SI+3456h]
+cs:0CF1 2B05           SUB AX, [DI]
+cs:0CF3 2B5558         SUB DX, [DI+58h]
+cs:0CF6 2B9D5634       SUB BX, [DI+3456h]
+cs:0CFA 2B4E00         SUB CX, [BP+00h]
+cs:0CFD 2B5658         SUB DX, [BP+58h]
+cs:0D00 2B9E5634       SUB BX, [BP+3456h]
+cs:0D04 2B32           SUB SI, [BP+SI]
+cs:0D06 2B7A39         SUB DI, [BP+SI+39h]
+cs:0D09 2BAA7856       SUB BP, [BP+SI+5678h]
+cs:0D0D 2B33           SUB SI, [BP+DI]
+cs:0D0F 2B7B49         SUB DI, [BP+DI+49h]
+cs:0D12 2BAB7856       SUB BP, [BP+DI+5678h]
+cs:0D16 290F           SUB [BX], CX
+cs:0D18 295778         SUB [BX+78h], DX
+cs:0D1B 299F5634       SUB [BX+3456h], BX
+cs:0D1F 2900           SUB [BX+SI], AX
+cs:0D21 296069         SUB [BX+SI+69h], SP
+cs:0D24 29B87856       SUB [BX+SI+5678h], DI
+cs:0D28 2929           SUB [BX+DI], BP
+cs:0D2A 297149         SUB [BX+DI+49h], SI
+cs:0D2D 29B97856       SUB [BX+DI+5678h], DI
+cs:0D31 2904           SUB [SI], AX
+cs:0D33 294C78         SUB [SI+78h], CX
+cs:0D36 29945634       SUB [SI+3456h], DX
+cs:0D3A 292D           SUB [DI], BP
+cs:0D3C 296578         SUB [DI+78h], SP
+cs:0D3F 29B55634       SUB [DI+3456h], SI
+cs:0D43 297E00         SUB [BP+00h], DI
+cs:0D46 294E78         SUB [BP+78h], CX
+cs:0D49 29965634       SUB [BP+3456h], DX
+cs:0D4D 2932           SUB [BP+SI], SI
+cs:0D4F 297A59         SUB [BP+SI+59h], DI
+cs:0D52 29827856       SUB [BP+SI+5678h], AX
+cs:0D56 293B           SUB [BP+DI], DI
+cs:0D58 295B19         SUB [BP+DI+19h], BX
+cs:0D5B 29937856       SUB [BP+DI+5678h], DX
+cs:0D5F 2A05           SUB AL, [DI]
+cs:0D61 2A6578         SUB AH, [DI+78h]
+cs:0D64 2ABD5634       SUB BH, [DI+3456h]
+cs:0D68 2A4E00         SUB CL, [BP+00h]
+cs:0D6B 2A5678         SUB DL, [BP+78h]
+cs:0D6E 2A9E5634       SUB BL, [BP+3456h]
+cs:0D72 2A2A           SUB CH, [BP+SI]
+cs:0D74 287578         SUB [DI+78h], DH
+cs:0D77 28955634       SUB [DI+3456h], DL
+cs:0D7B 286E00         SUB [BP+00h], CH
+cs:0D7E 284E56         SUB [BP+56h], CL
+cs:0D81 28BE5634       SUB [BP+3456h], BH
+cs:0D85 281A           SUB [BP+SI], BL
+cs:0D87 286245         SUB [BP+SI+45h], AH
+cs:0D8A 28827856       SUB [BP+SI+5678h], AL
+cs:0D8E 806D7815       SUB byte ptr [DI+78h], 15h
+cs:0D92 80AD563416     SUB byte ptr [DI+3456h], 16h
+cs:0D97 806E0028       SUB byte ptr [BP+00h], 28h
+cs:0D9B 806E5688       SUB byte ptr [BP+56h], 88h
+cs:0D9F 81AE56343412   SUB word ptr [BP+3456h], 1234h
+cs:0DA5 812A1534       SUB word ptr [BP+SI], 3415h
+cs:0DA9 816A458547     SUB word ptr [BP+SI+45h], 4785h
+cs:0DAE 81AA78563615   SUB word ptr [BP+SI+5678h], 1536h
+cs:0DB4 80E915         SUB CL, 15h
+cs:0DB7 80ED16         SUB CH, 16h
+cs:0DBA 80EA28         SUB DL, 28h
+cs:0DBD 80EC88         SUB AH, 88h
+cs:0DC0 81EB3412       SUB BX, 1234h
+cs:0DC4 81EF1534       SUB DI, 3415h
+cs:0DC8 81EC8547       SUB SP, 4785h
+cs:0DCC 81ED3615       SUB BP, 1536h
+cs:0DD0 0417           ADD AL, 17h
+cs:0DD2 051752         ADD AX, 5217h
+cs:0DD5 1B0F           SBB CX, [BX]
+cs:0DD7 1B5778         SBB DX, [BX+78h]
+cs:0DDA 1B9F5634       SBB BX, [BX+3456h]
+cs:0DDE 1B30           SBB SI, [BX+SI]
+cs:0DE0 1B7879         SBB DI, [BX+SI+79h]
+cs:0DE3 1BA87856       SBB BP, [BX+SI+5678h]
+cs:0DE7 1B31           SBB SI, [BX+DI]
+cs:0DE9 1B7929         SBB DI, [BX+DI+29h]
+cs:0DEC 1BA97856       SBB BP, [BX+DI+5678h]
+cs:0DF0 1B24           SBB SP, [SI]
+cs:0DF2 1B5428         SBB DX, [SI+28h]
+cs:0DF5 1B9C5634       SBB BX, [SI+3456h]
+cs:0DF9 1B05           SBB AX, [DI]
+cs:0DFB 1B5558         SBB DX, [DI+58h]
+cs:0DFE 1B9D5634       SBB BX, [DI+3456h]
+cs:0E02 1B4E00         SBB CX, [BP+00h]
+cs:0E05 1B5658         SBB DX, [BP+58h]
+cs:0E08 1B9E5634       SBB BX, [BP+3456h]
+cs:0E0C 1B32           SBB SI, [BP+SI]
+cs:0E0E 1B7A39         SBB DI, [BP+SI+39h]
+cs:0E11 1BAA7856       SBB BP, [BP+SI+5678h]
+cs:0E15 1B33           SBB SI, [BP+DI]
+cs:0E17 1B7B49         SBB DI, [BP+DI+49h]
+cs:0E1A 1BAB7856       SBB BP, [BP+DI+5678h]
+cs:0E1E 190F           SBB [BX], CX
+cs:0E20 195778         SBB [BX+78h], DX
+cs:0E23 199F5634       SBB [BX+3456h], BX
+cs:0E27 1900           SBB [BX+SI], AX
+cs:0E29 196069         SBB [BX+SI+69h], SP
+cs:0E2C 19B87856       SBB [BX+SI+5678h], DI
+cs:0E30 1929           SBB [BX+DI], BP
+cs:0E32 197149         SBB [BX+DI+49h], SI
+cs:0E35 19B97856       SBB [BX+DI+5678h], DI
+cs:0E39 1904           SBB [SI], AX
+cs:0E3B 194C78         SBB [SI+78h], CX
+cs:0E3E 19945634       SBB [SI+3456h], DX
+cs:0E42 192D           SBB [DI], BP
+cs:0E44 196578         SBB [DI+78h], SP
+cs:0E47 19B55634       SBB [DI+3456h], SI
+cs:0E4B 197E00         SBB [BP+00h], DI
+cs:0E4E 194E78         SBB [BP+78h], CX
+cs:0E51 19965634       SBB [BP+3456h], DX
+cs:0E55 1932           SBB [BP+SI], SI
+cs:0E57 197A59         SBB [BP+SI+59h], DI
+cs:0E5A 19827856       SBB [BP+SI+5678h], AX
+cs:0E5E 193B           SBB [BP+DI], DI
+cs:0E60 195B19         SBB [BP+DI+19h], BX
+cs:0E63 19937856       SBB [BP+DI+5678h], DX
+cs:0E67 1A05           SBB AL, [DI]
+cs:0E69 1A6578         SBB AH, [DI+78h]
+cs:0E6C 1ABD5634       SBB BH, [DI+3456h]
+cs:0E70 1A4E00         SBB CL, [BP+00h]
+cs:0E73 1A5678         SBB DL, [BP+78h]
+cs:0E76 1A9E5634       SBB BL, [BP+3456h]
+cs:0E7A 1A2A           SBB CH, [BP+SI]
+cs:0E7C 187578         SBB [DI+78h], DH
+cs:0E7F 18955634       SBB [DI+3456h], DL
+cs:0E83 186E00         SBB [BP+00h], CH
+cs:0E86 184E56         SBB [BP+56h], CL
+cs:0E89 18BE5634       SBB [BP+3456h], BH
+cs:0E8D 181A           SBB [BP+SI], BL
+cs:0E8F 186245         SBB [BP+SI+45h], AH
+cs:0E92 18827856       SBB [BP+SI+5678h], AL
+cs:0E96 805D7815       SBB byte ptr [DI+78h], 15h
+cs:0E9A 809D563416     SBB byte ptr [DI+3456h], 16h
+cs:0E9F 805E0028       SBB byte ptr [BP+00h], 28h
+cs:0EA3 805E5688       SBB byte ptr [BP+56h], 88h
+cs:0EA7 819E56343412   SBB word ptr [BP+3456h], 1234h
+cs:0EAD 811A1534       SBB word ptr [BP+SI], 3415h
+cs:0EB1 815A458547     SBB word ptr [BP+SI+45h], 4785h
+cs:0EB6 819A78563615   SBB word ptr [BP+SI+5678h], 1536h
+cs:0EBC 80D915         SBB CL, 15h
+cs:0EBF 80DD16         SBB CH, 16h
+cs:0EC2 80DA28         SBB DL, 28h
+cs:0EC5 80DC88         SBB AH, 88h
+cs:0EC8 81DB3412       SBB BX, 1234h
+cs:0ECC 81DF1534       SBB DI, 3415h
+cs:0ED0 81DC8547       SBB SP, 4785h
+cs:0ED4 81DD3615       SBB BP, 1536h
+cs:0ED8 0417           ADD AL, 17h
+cs:0EDA 051752         ADD AX, 5217h
+cs:0EDD F727           MUL word ptr [BX]
+cs:0EDF F76778         MUL word ptr [BX+78h]
+cs:0EE2 F7A75634       MUL word ptr [BX+3456h]
+cs:0EE6 F720           MUL word ptr [BX+SI]
+cs:0EE8 F76079         MUL word ptr [BX+SI+79h]
+cs:0EEB F7A07856       MUL word ptr [BX+SI+5678h]
+cs:0EEF F721           MUL word ptr [BX+DI]
+cs:0EF1 F76129         MUL word ptr [BX+DI+29h]
+cs:0EF4 F7A17856       MUL word ptr [BX+DI+5678h]
+cs:0EF8 F724           MUL word ptr [SI]
+cs:0EFA F76428         MUL word ptr [SI+28h]
+cs:0EFD F7A45634       MUL word ptr [SI+3456h]
+cs:0F01 F725           MUL word ptr [DI]
+cs:0F03 F76558         MUL word ptr [DI+58h]
+cs:0F06 F7A55634       MUL word ptr [DI+3456h]
+cs:0F0A F7E5           MUL BP
+cs:0F0C F76658         MUL word ptr [BP+58h]
+cs:0F0F F7A65634       MUL word ptr [BP+3456h]
+cs:0F13 F7E1           MUL CX
+cs:0F15 F76239         MUL word ptr [BP+SI+39h]
+cs:0F18 F7A27856       MUL word ptr [BP+SI+5678h]
+cs:0F1C F7E2           MUL DX
+cs:0F1E F76349         MUL word ptr [BP+DI+49h]
+cs:0F21 F7E6           MUL SI
+cs:0F23 F66578         MUL byte ptr [DI+78h]
+cs:0F26 F6A55634       MUL byte ptr [DI+3456h]
+cs:0F2A F6E6           MUL DH
+cs:0F2C F66678         MUL byte ptr [BP+78h]
+cs:0F2F F6A65634       MUL byte ptr [BP+3456h]
+cs:0F33 F6E4           MUL AH
+cs:0F35 F6E3           MUL BL
+cs:0F37 F6A55634       MUL byte ptr [DI+3456h]
+cs:0F3B F72F           IMUL word ptr [BX]
+cs:0F3D F76F78         IMUL word ptr [BX+78h]
+cs:0F40 F7AF5634       IMUL word ptr [BX+3456h]
+cs:0F44 F728           IMUL word ptr [BX+SI]
+cs:0F46 F76879         IMUL word ptr [BX+SI+79h]
+cs:0F49 F7A87856       IMUL word ptr [BX+SI+5678h]
+cs:0F4D F729           IMUL word ptr [BX+DI]
+cs:0F4F F76929         IMUL word ptr [BX+DI+29h]
+cs:0F52 F7A97856       IMUL word ptr [BX+DI+5678h]
+cs:0F56 F72C           IMUL word ptr [SI]
+cs:0F58 F76C28         IMUL word ptr [SI+28h]
+cs:0F5B F7AC5634       IMUL word ptr [SI+3456h]
+cs:0F5F F72D           IMUL word ptr [DI]
+cs:0F61 F76D58         IMUL word ptr [DI+58h]
+cs:0F64 F7AD5634       IMUL word ptr [DI+3456h]
+cs:0F68 F7ED           IMUL BP
+cs:0F6A F76E58         IMUL word ptr [BP+58h]
+cs:0F6D F7AE5634       IMUL word ptr [BP+3456h]
+cs:0F71 F7E9           IMUL CX
+cs:0F73 F76A39         IMUL word ptr [BP+SI+39h]
+cs:0F76 F7AA7856       IMUL word ptr [BP+SI+5678h]
+cs:0F7A F7EF           IMUL DI
+cs:0F7C F76B49         IMUL word ptr [BP+DI+49h]
+cs:0F7F F7EE           IMUL SI
+cs:0F81 F66D78         IMUL byte ptr [DI+78h]
+cs:0F84 F6AD5634       IMUL byte ptr [DI+3456h]
+cs:0F88 F6EE           IMUL DH
+cs:0F8A F66E78         IMUL byte ptr [BP+78h]
+cs:0F8D F6AE5634       IMUL byte ptr [BP+3456h]
+cs:0F91 F6EC           IMUL AH
+cs:0F93 F6EB           IMUL BL
+cs:0F95 F6AD5634       IMUL byte ptr [DI+3456h]
+cs:0F99 F737           DIV word ptr [BX]
+cs:0F9B F77778         DIV word ptr [BX+78h]
+cs:0F9E F7B75634       DIV word ptr [BX+3456h]
+cs:0FA2 F730           DIV word ptr [BX+SI]
+cs:0FA4 F77079         DIV word ptr [BX+SI+79h]
+cs:0FA7 F7B07856       DIV word ptr [BX+SI+5678h]
+cs:0FAB F731           DIV word ptr [BX+DI]
+cs:0FAD F77129         DIV word ptr [BX+DI+29h]
+cs:0FB0 F7B17856       DIV word ptr [BX+DI+5678h]
+cs:0FB4 F734           DIV word ptr [SI]
+cs:0FB6 F77428         DIV word ptr [SI+28h]
+cs:0FB9 F7B45634       DIV word ptr [SI+3456h]
+cs:0FBD F735           DIV word ptr [DI]
+cs:0FBF F77558         DIV word ptr [DI+58h]
+cs:0FC2 F7B55634       DIV word ptr [DI+3456h]
+cs:0FC6 F7F5           DIV BP
+cs:0FC8 F77658         DIV word ptr [BP+58h]
+cs:0FCB F7B65634       DIV word ptr [BP+3456h]
+cs:0FCF F7F1           DIV CX
+cs:0FD1 F77239         DIV word ptr [BP+SI+39h]
+cs:0FD4 F7B27856       DIV word ptr [BP+SI+5678h]
+cs:0FD8 F7F2           DIV DX
+cs:0FDA F77349         DIV word ptr [BP+DI+49h]
+cs:0FDD F7F6           DIV SI
+cs:0FDF F67578         DIV byte ptr [DI+78h]
+cs:0FE2 F6B55634       DIV byte ptr [DI+3456h]
+cs:0FE6 F6F6           DIV DH
+cs:0FE8 F67678         DIV byte ptr [BP+78h]
+cs:0FEB F6B65634       DIV byte ptr [BP+3456h]
+cs:0FEF F6F2           DIV DL
+cs:0FF1 F6F3           DIV BL
+cs:0FF3 F6B55634       DIV byte ptr [DI+3456h]
+cs:0FF7 F73F           IDIV word ptr [BX]
+cs:0FF9 F77F78         IDIV word ptr [BX+78h]
+cs:0FFC F7BF5634       IDIV word ptr [BX+3456h]
+cs:1000 F738           IDIV word ptr [BX+SI]
+cs:1002 F77879         IDIV word ptr [BX+SI+79h]
+cs:1005 F7B87856       IDIV word ptr [BX+SI+5678h]
+cs:1009 F739           IDIV word ptr [BX+DI]
+cs:100B F77929         IDIV word ptr [BX+DI+29h]
+cs:100E F7B97856       IDIV word ptr [BX+DI+5678h]
+cs:1012 F73C           IDIV word ptr [SI]
+cs:1014 F77C28         IDIV word ptr [SI+28h]
+cs:1017 F7BC5634       IDIV word ptr [SI+3456h]
+cs:101B F73D           IDIV word ptr [DI]
+cs:101D F77D58         IDIV word ptr [DI+58h]
+cs:1020 F7BD5634       IDIV word ptr [DI+3456h]
+cs:1024 F7FD           IDIV BP
+cs:1026 F77E58         IDIV word ptr [BP+58h]
+cs:1029 F7BE5634       IDIV word ptr [BP+3456h]
+cs:102D F7F8           IDIV AX
+cs:102F F77A39         IDIV word ptr [BP+SI+39h]
+cs:1032 F7BA7856       IDIV word ptr [BP+SI+5678h]
+cs:1036 F7FA           IDIV DX
+cs:1038 F77B49         IDIV word ptr [BP+DI+49h]
+cs:103B F7FE           IDIV SI
+cs:103D F67D78         IDIV byte ptr [DI+78h]
+cs:1040 F6BD5634       IDIV byte ptr [DI+3456h]
+cs:1044 F6FE           IDIV DH
+cs:1046 F67E78         IDIV byte ptr [BP+78h]
+cs:1049 F6BE5634       IDIV byte ptr [BP+3456h]
+cs:104D F6FC           IDIV AH
+cs:104F F6FB           IDIV BL
+cs:1051 F6BD5634       IDIV byte ptr [DI+3456h]
+cs:1055 FF07           INC word ptr [BX]
+cs:1057 FF4778         INC word ptr [BX+78h]
+cs:105A FF875634       INC word ptr [BX+3456h]
+cs:105E FF00           INC word ptr [BX+SI]
+cs:1060 FF4079         INC word ptr [BX+SI+79h]
+cs:1063 FF807856       INC word ptr [BX+SI+5678h]
+cs:1067 FF01           INC word ptr [BX+DI]
+cs:1069 FF4129         INC word ptr [BX+DI+29h]
+cs:106C FF817856       INC word ptr [BX+DI+5678h]
+cs:1070 FF04           INC word ptr [SI]
+cs:1072 FF4428         INC word ptr [SI+28h]
+cs:1075 FF845634       INC word ptr [SI+3456h]
+cs:1079 FF05           INC word ptr [DI]
+cs:107B FF4558         INC word ptr [DI+58h]
+cs:107E FF855634       INC word ptr [DI+3456h]
+cs:1082 FEC0           INC AL
+cs:1084 FEC1           INC CL
+cs:1086 FEC2           INC DL
+cs:1088 FEC3           INC BL
+cs:108A FEC4           INC AH
+cs:108C FEC5           INC CH
+cs:108E FEC7           INC BH
+cs:1090 FEC6           INC DH
+cs:1092 40             INC AX
+cs:1093 41             INC CX
+cs:1094 42             INC DX
+cs:1095 43             INC BX
+cs:1096 44             INC SP
+cs:1097 45             INC BP
+cs:1098 46             INC SI
+cs:1099 47             INC DI
+cs:109A FF0F           DEC word ptr [BX]
+cs:109C FF4F78         DEC word ptr [BX+78h]
+cs:109F FF8F5634       DEC word ptr [BX+3456h]
+cs:10A3 FF08           DEC word ptr [BX+SI]
+cs:10A5 FF4879         DEC word ptr [BX+SI+79h]
+cs:10A8 FF887856       DEC word ptr [BX+SI+5678h]
+cs:10AC FF09           DEC word ptr [BX+DI]
+cs:10AE FF4929         DEC word ptr [BX+DI+29h]
+cs:10B1 FF897856       DEC word ptr [BX+DI+5678h]
+cs:10B5 FF0C           DEC word ptr [SI]
+cs:10B7 FF4C28         DEC word ptr [SI+28h]
+cs:10BA FF8C5634       DEC word ptr [SI+3456h]
+cs:10BE FF0D           DEC word ptr [DI]
+cs:10C0 FF4D58         DEC word ptr [DI+58h]
+cs:10C3 FF8D5634       DEC word ptr [DI+3456h]
+cs:10C7 FEC8           DEC AL
+cs:10C9 FEC9           DEC CL
+cs:10CB FECA           DEC DL
+cs:10CD FECB           DEC BL
+cs:10CF FECC           DEC AH
+cs:10D1 FECD           DEC CH
+cs:10D3 FECF           DEC BH
+cs:10D5 FECE           DEC DH
+cs:10D7 48             DEC AX
+cs:10D8 49             DEC CX
+cs:10D9 4A             DEC DX
+cs:10DA 4B             DEC BX
+cs:10DB 4C             DEC SP
+cs:10DC 4D             DEC BP
+cs:10DD 4E             DEC SI
+cs:10DE 4F             DEC DI
+cs:10DF 37             AAA
+cs:10E0 D50A           AAD
+cs:10E2 3F             AAS
+cs:10E3 D40A           AAM
+cs:10E5 27             DAA
+cs:10E6 2F             DAS
+cs:10E7 F7DD           NEG BP
+cs:10E9 F75E58         NEG word ptr [BP+58h]
+cs:10EC F79E5634       NEG word ptr [BP+3456h]
+cs:10F0 F7D9           NEG CX
+cs:10F2 F75A39         NEG word ptr [BP+SI+39h]
+cs:10F5 F79A7856       NEG word ptr [BP+SI+5678h]
+cs:10F9 F7DA           NEG DX
+cs:10FB F75B49         NEG word ptr [BP+DI+49h]
+cs:10FE F7DE           NEG SI
+cs:1100 F65D78         NEG byte ptr [DI+78h]
+cs:1103 F69D5634       NEG byte ptr [DI+3456h]
+cs:1107 F6DE           NEG DH
+cs:1109 F65E78         NEG byte ptr [BP+78h]
+cs:110C F69E5634       NEG byte ptr [BP+3456h]
+cs:1110 F6DC           NEG AH
+cs:1112 F6DB           NEG BL
+cs:1114 F69D5634       NEG byte ptr [DI+3456h]
+cs:1118 98             CBW
+cs:1119 99             CWD
